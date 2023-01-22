@@ -5,9 +5,14 @@
 
 ### Introduction
 
-• This README file aims to convey how participants have cooperated in creating this project, while also explaining how each design pattern has been
+- This README file aims to convey how participants have cooperated in creating this project, while also explaining how each design pattern has been
 implemented into code.\
-• Github: https://github.com/Triggero/sde-program.git
+- Github: https://github.com/Triggero/sde-program.git
+
+### Cooperation
+
+- Unfortunately, since this is a re-sit assignment in another study year, I wasn't able to find another participant willing to collaborate
+with me on this project. Hence, I am the sole participant.
 
 ### Creational design patterns:
 
