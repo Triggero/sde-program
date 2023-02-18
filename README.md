@@ -32,11 +32,11 @@ of the class.
 - Factory is a creational design pattern that provides an interface for creating objects in a superclass, but allows subclasses to alter the type of 
 objects that will be created.
 
-- In the project's implementation, we first define a factory method inside an Interface called Order.java which is then implemented by
-several subclasses. The OrderFactory class handles the instantiation of objects from those subclasses.
+- In the project's implementation, we first create an Order abstract class. Then we create several classes that extend the Order abstract class. In this case, food types
+  like Pizza and Burger. Then we create a GetPriceFactory that generates an object of our food type classes based on the conditions met.
 
-- The Restaurant class tests whether the OrderFactory method works as intended by attempting to create a new object utilising the factory
-and also altering the prospective object's parameters.
+- The GetBill class prompts the user for a string of their chosen food type via the console. You can type in "Pizza" or "Burger. It's case sensitive. If working correctly,
+  you should get a price according to what you typed in. "5.00" for Burger and "3.00" for Pizza.
 
 
 ### Behavioural design patterns:
