@@ -29,8 +29,7 @@ of the class.
 
 2. Factory design pattern
 
-- Factory is a creational design pattern that provides an interface for creating objects in a superclass, but allows subclasses to alter the type of 
-objects that will be created.
+- A Factory Pattern or Factory Method Pattern says that just define an interface or abstract class for creating an object but let the subclasses decide which class to instantiate. In other words, subclasses are responsible to create the instance of the class.
 
 - In the project's implementation, we first create an Order abstract class. Then we create several classes that extend the Order abstract class. In this case, food types
   like Pizza and Burger. Then we create a GetPriceFactory that generates an object of our food type classes based on the conditions met.
