@@ -32,12 +32,10 @@ of the class.
 - Factory is a creational design pattern that provides an interface for creating objects in a superclass, but allows subclasses to alter the type of 
 objects that will be created.
 
-- In the project's implementation, we first define a factory method inside an Interface called Order.java which is then implemented by
-several subclasses. The OrderFactory class handles the instantiation of objects from those subclasses.
+- In the project's implementation, we first create an Order abstract class. Then we create several classes that extend the Order abstract class. In this case, food types
+  like Pizza and Burger. Then we create a BurgerOrder and PizzaOrder that extend Order and return an object Burger and Pizza respectively.
 
-- The Restaurant class tests whether the OrderFactory method works as intended by attempting to create a new object utilising the factory
-and also altering the prospective object's parameters.
-
+- When the main class Restaurant is run, orders for both food types are created and each one's getPrice() method is called. This results in a print statement for each food type containing its price.
 
 ### Behavioural design patterns:
 
@@ -59,3 +57,17 @@ Subject interface, that also notifies our observers.
 
 - An ObserverTest class verifies the intended function of this design pattern by initialising and updating our observers, logging a
 message in the console for each event observed by every registered observer.
+
+### Structural design patterns:
+
+1. Adapter design pattern
+
+- Adapter is a structural design pattern that allows objects with incompatible interfaces to collaborate.
+
+- In the program, IntegerPrinter is used as an interface for printing integers via a function that only accepts such data type.
+
+- StringToIntAdapter serves as the adapter class, which implements the IntegerPrinter interface and specifies functionality for its printNumber() method.
+
+- The adaptation comes from its adapt() method, that accepts a string, parses it to an integer and returns it.
+
+- This way, in the Main Class, when the printNumber() method is called, which usually only accepts an integer, a string can be provided by wrapping it in the Adapter's adapt() method.
